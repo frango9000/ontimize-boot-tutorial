@@ -10,4 +10,9 @@ import org.springframework.stereotype.Repository;
 @ConfigurationFile(configurationFile = "dao/CandidateDao.xml", configurationFilePlaceholder = "dao/placeholders.properties")
 public class CandidateDao extends OntimizeJdbcDaoSupport {
 
+    public static final String ATTR_EDUCATION = "education";
+    public static final String ATTR_ORIGIN = "origin";
+    public static final String ATTR_EXPERIENCE_LEVEL = "experience_level";
+    public static final String ATTR_STATUS = "status";
+    public static final String ATTR_PROFILE = "profile";
 }
