@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository("CandidateDao")
 @Lazy
-@ConfigurationFile(configurationFile = "dao/CandidateDao.xml", configurationFilePlaceholder = "dao/placeholder.properties")
+@ConfigurationFile(configurationFile = "dao/CandidateDao.xml", configurationFilePlaceholder = "dao/placeholders.properties")
 public class CandidateDao extends OntimizeJdbcDaoSupport {
 
 }

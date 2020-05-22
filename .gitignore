@@ -1,8 +1,18 @@
 # Default ignored files
 /shelf/
 /.idea/workspace.xml
+hr.iml
 # Datasource local storage ignored files
 /.idea/dataSources/
 /.idea/dataSources.local.xml
 # Editor-based HTTP Client requests
 /.idea/httpRequests/
+
+#Target Folders
+/api/target/
+/boot/target/
+/frontend/target/
+/model/target/
+/ws/target/
+
+

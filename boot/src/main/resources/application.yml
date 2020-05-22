@@ -1,44 +1,71 @@
 endpoints:
    api:
+      # Active Spring Boot endpoints
       enabled: true
 logging:
    level:
+      # Default server log level set to INFO level
       root: info
 ontimize:
    corsfilter:
+      # CORS filter enabled
       enabled: true
    globalcors:
+      # CORS global configuration
       corsConfigurations:
+         # Configuration for this entrypoint:'[/**]'
          '[/**]':
+            # Allow different origins
             allowedOrigins: "*"
+            # Allow headers
             allowedHeaders: "*"
+            # Exposed headers
             exposedHeaders: ["X-Auth-Token","Content-disposition","X-Requested-With"]
+            # Allow HTTP methods
             allowedMethods:
-            - GET
-            - POST
-            - PUT
-            - OPTIONS
-            - DELETE
+               - GET
+               - POST
+               - PUT
+               - OPTIONS
+               - DELETE
    jdbc:
+      # Convention of data columns name
       nameConvention: upper
+      # SQL handler
       sqlhandler: oracle
       sqlConditionProcessor:
+         # Use of uppercase
          uppperString: true
+         # String comparision using LIKE in uppercase
          upperLike: true
    security:
+      # Default security mode
       mode: default
+      #Configure columns for user roles
       roleInformationService:
+         # Repository which store the user role
          roleRepository: UserRoleDao
+         # Name of the column which store the role name
          roleNameColumn: ROLENAME
+         # Query ID to identify the query of server permissions
          serverPermissionQueryId: serverPermissions
+         # Name of the columns which contains the name of the server permission
          serverPermissionNameColumn: PERMISSION_NAME
+         # Query ID for  client permissions
          clientPermissionQueryId: clientPermissions
+         # Name of the columns which contains the name of the client permission
          clientPermissionColumn: XMLCLIENTPERMISSION
+      # Information about the user
       userInformationService:
+         # Repository which stores the users of the application
          userRepository: UserDao
+         # Name of the column with the username
          userLoginColumn: USER_
+         # Name of the column with the password
          userPasswordColumn: PASSWORD
+         # Query identifier for login
          queryId: login
+         # Other query columns
          otherData:
             - NAME
             - SURNAME
@@ -47,30 +74,49 @@ ontimize:
             - USERBLOCKED
             - LASTPASSWORDUPDATE
             - FIRSTLOGIN
+      # Repository information about linking users and roles
       userRoleInformationService:
+         # Repository name
          userRoleRepository: UserRoleDao
+         # Query identifier
          queryId: userRole
+         # Column which stores the user
          roleLoginColumn: USER_
+         # Column which stores the role name
          roleNameColumn: ROLENAME
 server:
+   # Server port
    port: 33333
    tomcat:
+      # URI encoding
       uri-encoding: UTF-8
    compression:
+      # Enable data compression
       enabled: true
+      # Mime types
       mime-types: application/json, application/xml
 spring:
+   # Origen de los datos (Conexión con la DB)
    datasource:
+      # JDBC driver
       driver-class-name: org.hsqldb.jdbcDriver
+      # Connection URL
       jdbcUrl: jdbc:hsqldb:hsql://localhost:9013/templateDB
+      # DB username
       username: SA
+      # DB username paswword
       password:
+      # Initial size
       initialSize: 10
+      # Validation
       testOnBorrow: true
    main:
+      # Remove the startup banner in the console
       banner-mode: 'off'
    session:
+      # Save the session in spring
       store-type: none
    autoconfigure:
+      # Delete Spring Boot auto-configuration files
       exclude: |
          org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration, org.springframework.boot.actuate.autoconfigure.ManagementWebSecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.FallbackWebSecurityAutoConfiguration
