@@ -267,6 +267,106 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "1-GetOffer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/offers/offer?columns=ID,ACRONYM,DESCRIPTION,APPLICANT,OFFER_STATUS,CREATION_DATE,START_DATE,END_DATE",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"offers",
+						"offer"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,ACRONYM,DESCRIPTION,APPLICANT,OFFER_STATUS,CREATION_DATE,START_DATE,END_DATE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetOfferStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/offers/offerStatus?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"offers",
+						"offerStatus"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetOfferCandidateStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/offers/offerCandidateStatus?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"offers",
+						"offerCandidateStatus"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetOfferCandidates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/offers/offerCandidate?columns=ID,OFFER_ID,CANDIDATE_ID,OFFER_CANDIDATE_STATUS",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"offers",
+						"offerCandidate"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,OFFER_ID,CANDIDATE_ID,OFFER_CANDIDATE_STATUS"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
