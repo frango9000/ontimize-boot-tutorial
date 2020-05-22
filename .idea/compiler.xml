@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hr-api" />
+        <module name="hr-ws" />
+        <module name="hr-boot" />
+        <module name="hr-frontend" />
+        <module name="hr-model" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="hr" target="1.8" />
+      <module name="hr-api" target="1.8" />
+      <module name="hr-boot" target="1.8" />
+      <module name="hr-frontend" target="1.8" />
+      <module name="hr-model" target="1.8" />
+      <module name="hr-ws" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hr-api" options="-parameters" />
+      <module name="hr-boot" options="-parameters" />
+      <module name="hr-frontend" options="-parameters" />
+      <module name="hr-model" options="-parameters" />
+      <module name="hr-ws" options="-parameters" />
+    </option>
+  </component>
+</project>
