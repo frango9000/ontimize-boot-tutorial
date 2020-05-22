@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hr.iml" filepath="$PROJECT_DIR$/hr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/hr-api.iml" filepath="$PROJECT_DIR$/api/hr-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/boot/hr-boot.iml" filepath="$PROJECT_DIR$/boot/hr-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/frontend/hr-frontend.iml" filepath="$PROJECT_DIR$/frontend/hr-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model/hr-model.iml" filepath="$PROJECT_DIR$/model/hr-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ws/hr-ws.iml" filepath="$PROJECT_DIR$/ws/hr-ws.iml" />
+    </modules>
+  </component>
+</project>
