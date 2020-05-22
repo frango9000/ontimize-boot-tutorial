@@ -142,6 +142,131 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "1-GetEducations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/master/education?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"master",
+						"education"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetExperienceLevels",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/master/experienceLevel?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"master",
+						"experienceLevel"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetOrigin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/master/origin?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"master",
+						"origin"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetProfile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/master/profile?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"master",
+						"profile"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1-GetStatus",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:33333/master/status?columns=ID,DESCRIPTION",
+					"host": [
+						"localhost"
+					],
+					"port": "33333",
+					"path": [
+						"master",
+						"status"
+					],
+					"query": [
+						{
+							"key": "columns",
+							"value": "ID,DESCRIPTION"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"auth": {
